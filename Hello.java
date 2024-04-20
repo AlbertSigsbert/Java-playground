@@ -14,5 +14,14 @@ class Hello {
 
 
         System.out.println("Hello World!");
+
+        System.out.println("Int"+ num);
+        System.out.println("Byte"+ by);
+        System.out.println("Short"+ s);
+        System.out.println("Long"+ l);
+        System.out.println("Float"+ f);
+        System.out.println("Double"+ d);
+        System.out.println("Char"+ k);
+        System.out.println("Boolean"+ b);
     }
 }

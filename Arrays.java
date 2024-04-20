@@ -25,14 +25,14 @@ public class Arrays {
          
          */
 
-         int values[][] = new int[3][4];
+        //  int values[][] = new int[3][4];
 
          //Assigning random values
-         for(int i =0; i < 3; i++){
-            for(int j =0; j <4; j++){
-                values[i][j] = (int) (Math.random() * 10);
-            }
-         }
+        //  for(int i =0; i < 3; i++){
+        //     for(int j =0; j <4; j++){
+        //         values[i][j] = (int) (Math.random() * 10);
+        //     }
+        //  }
 
          //Printing values
         //  for(int i =0; i < 3; i++){
@@ -43,11 +43,39 @@ public class Arrays {
         //  }
          
          //Using enhanced for loop for multi-dimensional arrays
-         for(int n[]: values){
+        //  for(int n[]: values){
+        //     for (int m: n){
+        //         System.out.print(m+ " ");
+        //     }
+        //     System.out.println();
+        //  }
+
+
+        //JAGGED ARRAYS
+
+        int jagged[][] = new int[3][];
+
+        //Defining dynamic size of cols
+        jagged[0] = new int[4];
+        jagged[1] = new int[2];
+        jagged[2] = new int[3];
+
+        //Assigning random values
+         for(int i =0; i < jagged.length; i++){
+            for(int j =0; j <jagged[i].length; j++){
+                jagged[i][j] = (int) (Math.random() * 10);
+            }
+         }
+
+        //Using enhanced for loop for jagged arrays
+         for(int n[]: jagged){
             for (int m: n){
                 System.out.print(m+ " ");
             }
             System.out.println();
          }
+
+
+        
     }
 }
